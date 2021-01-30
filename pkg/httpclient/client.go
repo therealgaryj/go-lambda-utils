@@ -20,7 +20,7 @@ func HttpGet(url string, headers map[string]string) (HttpResponse, error) {
 		return HttpResponse{}, err
 	}
 
-	request.Header.Set("Accept", "application/json;charset=utf8")
+	request.Header.Set("Accept", "application/json; charset=utf8")
 
 	addHeadersToRequest(request, headers)
 
@@ -50,7 +50,7 @@ func httpSendWithBody(method string, url string, headers map[string]string, payl
 	}
 
 	request.Header.Set("Accept", "application/json;charset=utf8")
-	request.Header.Set("Content-Type", "application/json;charset=utf8")
+	request.Header.Set("Content-Type", "application/json; charset=utf8")
 
 	addHeadersToRequest(request, headers)
 
