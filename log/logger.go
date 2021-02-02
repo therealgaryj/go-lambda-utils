@@ -80,10 +80,10 @@ func printLog(level string, message string, overrideLogLevel bool) {
 		timestamp := time.Now().UTC().Format("2006-01-02 15:04:05.000")
 
 		structuredMessage := logMessage{
-			RequestId: requestId,
-			Timestamp: timestamp,
-			Level:     level,
-			Message:   message,
+			RequestId:      requestId,
+			Timestamp:      timestamp,
+			Level:          level,
+			Message:        message,
 			SequenceNumber: sequenceNumber,
 		}
 		json, err := json.Marshal(structuredMessage)

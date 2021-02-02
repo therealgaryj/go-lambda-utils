@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"encoding/json"
 	"fmt"
-	"github.com/therealgaryj/go-lambda-utils/pkg/log"
+	"github.com/therealgaryj/go-lambda-utils/log"
 	"io/ioutil"
 	"net/http"
 	"strings"
